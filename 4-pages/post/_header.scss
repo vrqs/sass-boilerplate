@@ -1,0 +1,16 @@
+/**
+ * Pages / Post
+ * Header.scss
+ */
+
+@use "../scopes" as scope;
+@use "../../0-abstracts/" as *;
+
+#{scope.$post} {
+
+header.post-header {
+  text-align: center;
+  @include padding(y, (40, 72));
+}
+
+}

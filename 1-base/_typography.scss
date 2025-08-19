@@ -1,0 +1,82 @@
+/**
+ * Base
+ * Typography.scss
+ */
+
+@use "../0-abstracts/" as *;
+
+.title {
+
+  &.title-1 { @include font(80, 72, -1.2, 600); }
+
+  &.title-2 {
+    @include font(48, 48, -.8, 750, $width: 92%);
+  }
+
+  &.title-3 {
+    @include font(40, 36, -.8, 750, $width: 92%);
+  }
+
+  &.title-4 {
+    @include font(32, 32, -0.6, 750, $width: 92%);
+  }
+
+  &.title-5 {
+    @include font(24, 24, -0.06, 600);
+  }
+}
+
+.display {
+  &.display-1 {
+    @include font(72, 64, -1, 800, $width: 92%);
+  }
+}
+
+.subtitle {
+  font-family: $font-secondary;
+  text-transform: uppercase;
+
+  &.subtitle-1 {
+    @include font(32, 32, -0.3, 600)
+  }
+}
+
+.body {
+  &-large {
+    @include font(24, 32, -0.6, 420);
+  }
+
+  &-regular {
+    @include font(20, 28, -0.35, 400);
+  }
+
+  &-small {
+    @include font(18, 24, -0.2, 440);
+  }
+}
+
+.label {
+  &-regular {
+    @include font(16, 20, -0.3, 440, $width: 95%);
+  }
+
+  &-small {
+    @include font(14, 16, -0.2, 450, $width: 95%);
+  }
+}
+
+.link {
+  &-regular {
+    @include font(20, 24, -0.1, 550, $width: 90%);
+  }
+  
+  &-small { @extend .body-small; }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

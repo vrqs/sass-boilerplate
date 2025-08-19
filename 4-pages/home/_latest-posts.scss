@@ -1,0 +1,27 @@
+/**
+ * Pages / Home
+ * Latest-Posts.scss
+ */
+
+@use "../scopes" as scope;
+@use "../../0-abstracts/" as *;
+@use "../../1-base/typography" as *;
+
+#{scope.$home} {
+
+.latest-posts {  
+  .container {
+    @include flex(column, center);
+  }
+
+  .subtitle {
+    color: var(--color-accent-4);
+    margin-bottom: 32px;
+  }
+
+  ul {
+    @include grid(1fr 1fr, $gap: $container-col-gap);
+  }
+}
+
+}

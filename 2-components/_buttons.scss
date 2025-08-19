@@ -1,0 +1,32 @@
+/**
+ * Components
+ * Buttons.scss
+ */
+
+@use "../0-abstracts/" as *;
+
+.button {
+  @include font(
+    22, 24, -.02, 700,
+    var(--color-accent-7),
+    $font-secondary,
+    uppercase
+  );
+
+  background-color: var(--color-button-background);
+  border-radius: 50px;
+  @include padding(x, 16px);
+  @include flex(row, center, center);
+  min-height: 40px;
+  cursor: pointer;
+  transition: all 80ms;
+  box-shadow:
+    inset 0 -2px 2px 0 #00000024,
+    inset 0 2px 2px 0 #ffffff38;
+
+    &:hover {
+      transition: all 80ms;
+      transform: scale(1.02);
+      background-color: var(--color-accent-2);
+    }
+}

@@ -30,3 +30,10 @@
   @warn "Breakpoint `#{$key}` not found in $breakpoints map.";
   @return null;
 }
+
+/**
+  * Returns width value for X number of columns
+  */
+@function col-width($columns) {
+  @return ($container-col-width * $columns) + ($container-col-gap * ($columns - 1));
+}

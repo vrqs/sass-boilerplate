@@ -11,7 +11,7 @@
     $max-w: $container-width,
   );
   
-  @include padding(x, 16);
+  padding-inline: $container-outer-padding;
   margin: auto;
 
   &.container-8 {
@@ -20,9 +20,5 @@
 
   &.container-6 {
     max-width: $container-6-width;
-  }
-
-  &.container-post-content {
-    @include padding(x, 56);
   }
 }

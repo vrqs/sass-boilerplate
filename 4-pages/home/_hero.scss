@@ -10,71 +10,7 @@
 #{scope.$home} {
 
 .hero {
-  @include padding(y, (32, 56));
   position: relative;
-
-  .container {
-    text-align: center;
-  }
-
-  .main {
-    .hero-content {
-      @include margin(y, 64);
-    }
-  
-    p {
-      @extend .body-large;
-    }
-  }
-
-  .newsletter {
-    @include flex(column, center, $gap: 16);
-    
-    .input-group {
-      @include wh(100%, $max-w: $container-6-width);
-      @include flex($align: center);
-      position: relative;
-    }
-  
-    input {
-      @extend .body-regular;
-      @include wh(100%, $max-h: 56);
-      border-radius: 50px;
-      @include padding(all, (16, 24));
-      transition: all 220ms;
-      box-shadow: 0 1px 4px 0 var(--color-shadow-cards);
-  
-      &::placeholder {
-        color: var(--color-accent-1);
-        opacity: .4;
-      }
-  
-      &:focus {
-        box-shadow: 0px 1px 5px 2px var(--color-shadow-cards);
-        transition: all 220ms;
-      }
-    }
-  
-    .button {
-      @include pos($r: 8);
-    }
-  }
-
-  // @include pseudo("after") {
-  //   @include wh(
-  //     90%,
-  //     calc(100% + 54px),
-  //     1600
-  //   );
-  //   @include pos(-36, $l: 50%, $z: -10);
-  //   transform: translateX(-50%);
-  //   border: 3px solid transparent;
-  //   border-radius: 24px;
-  //   border-image-source: url("../images/border.svg");
-  //   border-image-width: 64px;
-  //   border-image-slice: 38%;
-  //   border-image-repeat: round;
-  // }
 }
 
 }

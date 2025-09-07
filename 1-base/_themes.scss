@@ -25,33 +25,11 @@
   color: var(--color-text-primary);
 }
 
-html {
-  @include pseudo("after") {
-    @include wh(
-      90%,
-      calc(100% - 124px),
-      1600
-    );
-    @include pos(36, $l: 50%, $z: -10);
-    @include border(3, transparent, 24);
-    transform: translateX(-50%);
-    border-image-source: url("#{$assets}border.svg");
-    border-image-width: 64px;
-    border-image-slice: 38%;
-    border-image-repeat: round;
-  }
-}
-
 html,
 body {
   position: relative;
-  @include wh($h: auto, $min-h: 100%);
 }
 
 body {
-  @include bg(
-    "texture.png",
-    contain
-  );
   font-family: $font-primary;
 }

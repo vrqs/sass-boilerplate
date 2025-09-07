@@ -12,23 +12,3 @@
   src: url("../fonts/bricolagegrotesque.woff2") format("woff2-variations"),
        url("../fonts/bricolagegrotesque.ttf") format("truetype");
 }
-
-@font-face {
-  font-family: "Bevellier";
-  font-style: normal;
-  font-weight: 600;
-  font-display: block;
-  src: url("../fonts/bevellier-semibold.woff") format("woff-variations"),
-       url("../fonts/bevellier-semibold.woff2") format("woff2-variations"),
-       url("../fonts/bevellier-semibold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Bevellier";
-  font-style: normal;
-  font-weight: 700;
-  font-display: block;
-  src: url("../fonts/bevellier-bold.woff") format("woff-variations"),
-       url("../fonts/bevellier-bold.woff2") format("woff2-variations"),
-       url("../fonts/bevellier-bold.ttf") format("truetype");
-}

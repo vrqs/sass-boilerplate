@@ -3,31 +3,6 @@
  * Variables.scss
  */
 
-$assets: "../images/";
-
-$font-primary: "Bricolage";
-$font-secondary: "Bevellier";
-
-$container-col-width: 80px;
-$container-col-gap: 20px;
-$container-col-count: 12;
-$container-outer-padding: 16px;
-
-$container-width: calc(
-  calc($container-col-width * $container-col-count)
-  + calc($container-col-gap * calc($container-col-count - 1))
-);
-
-$container-8-width: calc(
-  calc($container-col-width * 8)
-  + calc($container-col-gap * 7)
-);
-
-$container-6-width: calc(
-  calc($container-col-width * 6)
-  + calc($container-col-gap * 5)
-);
-
 $breakpoints: (
   xs: 360px,
   sm: 480px,
